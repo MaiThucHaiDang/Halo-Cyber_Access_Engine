@@ -594,6 +594,9 @@ void detectAnomalies(const DataArray& datas)
             }
             cout << "\n=> Tong cong phat hien: " << total << " truong hop.\n";
         }
+        
+        system("pause");
+        system("cls");
     }
 
     delete[] uArr;

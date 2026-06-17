@@ -97,6 +97,8 @@ int main()
 			if (!isValidTimestamp(startTimestamp))
 			{
 				cout << "Thoi gian bat dau khong hop le!\n";
+				system("pause");
+				system("cls");
 				continue;
 			}
 			cout << "Moi thay nhap thoi gian ket thuc: ";
@@ -104,6 +106,8 @@ int main()
 			if (!isValidTimestamp(endTimestamp))
 			{
 				cout << "Thoi gian ket thuc khong hop le!\n";
+				system("pause");
+				system("cls");
 				continue;
 			}
 			getUserJourney(datas, userIdxArr, id, fast_stoull(startTimestamp.c_str()), fast_stoull(endTimestamp.c_str()));
@@ -117,6 +121,8 @@ int main()
 			if (!isValidTimestamp(startTimestamp))
 			{
 				cout << "Thoi gian bat dau khong hop le!\n";
+				system("pause");
+				system("cls");
 				continue;
 			}
 			cout << "Moi thay nhap thoi gian ket thuc: ";
@@ -124,6 +130,8 @@ int main()
 			if (!isValidTimestamp(endTimestamp))
 			{
 				cout << "Thoi gian ket thuc khong hop le!\n";
+				system("pause");
+				system("cls");
 				continue;
 			}
 			getResourceJourney(datas, resourceIdxArr, id, fast_stoull(startTimestamp.c_str()), fast_stoull(endTimestamp.c_str()));
@@ -135,6 +143,8 @@ int main()
 			if (!isValidTimestamp(startTimestamp))
 			{
 				cout << "Thoi gian bat dau khong hop le!\n";
+				system("pause");
+				system("cls");
 				continue;
 			}
 			cout << "Moi thay nhap thoi gian ket thuc: ";
@@ -142,6 +152,8 @@ int main()
 			if (!isValidTimestamp(endTimestamp))
 			{
 				cout << "Thoi gian ket thuc khong hop le!\n";
+				system("pause");
+				system("cls");
 				continue;
 			}
 			getTop10Resources(datas, resourceIdxArr, fast_stoull(startTimestamp.c_str()), fast_stoull(endTimestamp.c_str()));
@@ -153,9 +165,10 @@ int main()
 		else
 		{
 			cout << "Lua chon cua thay khong hop le.\n";
-			system("pause");
-			system("cls");
 		}
+		
+		system("pause");
+		system("cls");
 	}
 
 	delete[] userIdxArr;
