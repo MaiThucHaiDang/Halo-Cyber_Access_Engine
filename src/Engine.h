@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
 #include "DataArray.h"
-
 using namespace std;
 
 struct NumIdx
