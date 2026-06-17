@@ -4,9 +4,9 @@ using namespace std;
 
 struct DataArray
 {
-	char*** rows; // chứa data của toàn bộ file dạng mảng 2 chiều
-	char** fileDataArr; // chứa data của toàn bộ file dạng mảng 1 chiều
-	char* fileData; // chứa data của toàn bộ file trước khi xử lí
+	char*** rows;
+	char** fileDataArr;
+	char* fileData;
 	string* columnNames;
 	int columnSize;
 	int rowSize;

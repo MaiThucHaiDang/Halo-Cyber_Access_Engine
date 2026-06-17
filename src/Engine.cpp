@@ -24,7 +24,6 @@ StrIdx* sortIdxArr(const DataArray& datas, const string& columnName)
 	return idxArr;
 }
 
-// Chỉ xét số, không xét các ký tự khác để tăng tốc
 unsigned long long fast_stoull(const char* s)
 {
 	if (!s || s[0] == '\0')

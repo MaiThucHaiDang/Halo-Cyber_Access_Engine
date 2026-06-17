@@ -41,8 +41,8 @@ void menu()
 	cout << "1. Hanh trinh Device -> App -> Resource cua 1 User\n";
 	cout << "2. Hanh trinh User -> Device -> App cua 1 Resource\n";
 	cout << "3. Top 10 Resource duoc truy xuat nhieu nhat\n";
-	cout << "4. Phat hien cac hanh vi bat thuong (Danh gia cuoi ki)\n";
-	cout << "5. Thoat va giai phong bo nho\n";
+	cout << "4. Phat hien cac hanh vi bat thuong\n";
+	cout << "0. Thoat va giai phong bo nho\n";
 	cout << "==================================================\n";
 	cout << "Moi thay nhap lua chon: ";
 }
@@ -82,7 +82,7 @@ int main()
 	{
 		menu();
 		cin >> choice;
-		if (choice == "5")
+		if (choice == "0")
 		{
 			break;
 		}
@@ -153,6 +153,8 @@ int main()
 		else
 		{
 			cout << "Lua chon cua thay khong hop le.\n";
+			system("pause");
+			system("cls");
 		}
 	}
 

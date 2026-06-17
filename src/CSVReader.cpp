@@ -31,7 +31,7 @@ int loadData(const string& filename, DataArray& datas)
 	file.seekg(0, ios::beg);
 	datas.fileData = new char[fileSize + 1];
 	file.read(datas.fileData, fileSize);
-	size_t actualSize = file.gcount(); // Kích thước thật sự của mảng bị giảm đi đúng bằng số lần xuống dòng trong file, do hàm read đã lọc đi \r mỗi lần xuống dòng
+	size_t actualSize = file.gcount();
 	datas.fileData[actualSize] = '\0';
 	file.close();
 
@@ -66,7 +66,6 @@ int loadData(const string& filename, DataArray& datas)
 		}
 	}
 
-	// Xử lí dòng cuối nếu không xuống dòng
 	if (datas.fileData[actualSize - 1] != '\n')
 	{
 		++rows;
